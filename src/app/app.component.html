@@ -2,6 +2,7 @@
 
 <div class="add-todo__input">
   <app-add-todo (create)="addTodo($event)"></app-add-todo>
+  <app-rx-add-todo (create)="addTodo($event)"></app-rx-add-todo>
 </div>
 
 <app-todo-list [todos]="todos | async"></app-todo-list>
