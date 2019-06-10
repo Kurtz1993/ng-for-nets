@@ -12,7 +12,6 @@ import { TodoItem } from 'src/app/models/todo.model';
 export class RxAddTodoComponent implements OnInit, OnDestroy {
   @Output()
   create = new EventEmitter<TodoItem>();
-  todoText: string;
   userInput$ = new Subject<string>();
 
   private userInputSub: SubscriptionLike;
