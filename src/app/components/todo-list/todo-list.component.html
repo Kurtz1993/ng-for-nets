@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="toggleCompleted()">
+  {{ showCompleted ? "Hide" : "Show" }} completed
+</button>
+<div class="todo-list">
+  <app-todo-item
+    [todo]="todo"
+    *ngFor="let todo of filteredTodos"
+    (toggleComplete)="toggleTodo($event)"
+  ></app-todo-item>
+</div>

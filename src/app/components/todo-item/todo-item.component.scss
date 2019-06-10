@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--done {
+    color: #ccc;
+    font-style: oblique;
+
+    span {
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        border-top: 1px solid #cecece;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

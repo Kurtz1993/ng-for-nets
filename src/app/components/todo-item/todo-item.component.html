@@ -1,0 +1,4 @@
+<div class="todo-item" [class.todo-item--done]="todo.done">
+  <span>{{ todo.text }}</span>
+  <input type="checkbox" [checked]="todo.done" (change)="toggleDone()" />
+</div>
