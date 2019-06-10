@@ -1,3 +1,5 @@
-<p>
-  rx-add-todo works!
-</p>
+<input
+  type="text"
+  placeholder="Enter your todo..."
+  (input)="userInput$.next($event.target.value)"
+/>
